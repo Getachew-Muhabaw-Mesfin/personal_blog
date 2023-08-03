@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+
+{% block page_title %}
+    My Blog
+{% endblock page_title %}
+ 
+
+{% block content %}
+<header id ="main-navigation">
+    <h1><a href="">Getachew's Blog</a></h1>
+    <nav><a href="">All Posts</a></nav>
+</header>
+<section id="welcome">
+    <header>
+        <img src="#" alt="Some images">
+       
+        <h2> Getachew's Blog</h2>
+    </header>
+    <p>Hi I am Getachew and I love to blog about tech and the world!</p>
+</section>
+ <section id="latest-posts">
+    <h2>My Latest thoght</h2>
+    <ul>
+        <li>
+            <article class="post">
+                <a href="">
+                    <img src="" alt="post image">
+                    <div class="post__content">
+                        <h3>Mountian Hiking!!</h3>
+                        <p>Theire is notting about the views  {% lorem 4 b random %}</p>
+                    </div>
+                </a>
+            </article>
+        </li>
+    </ul>
+ </section>
+{% endblock content %}
+    
